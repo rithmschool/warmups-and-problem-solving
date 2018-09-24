@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from once import once
 
 
 class UnitTests(unittest.TestCase):

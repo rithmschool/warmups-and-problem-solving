@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from reverse_string import reverse_string
 
 
 class UnitTests(unittest.TestCase):

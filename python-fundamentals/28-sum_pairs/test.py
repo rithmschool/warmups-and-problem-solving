@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from sum_pairs import sum_pairs
 
 
 class UnitTests(unittest.TestCase):

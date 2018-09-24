@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from letter_counter import letter_counter
 
 
 class UnitTests(unittest.TestCase):

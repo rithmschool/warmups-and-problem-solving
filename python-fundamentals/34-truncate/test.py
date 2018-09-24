@@ -1,6 +1,6 @@
 import unittest
 # Click to add an import
-
+from truncate import truncate
 
 class UnitTests(unittest.TestCase):
 

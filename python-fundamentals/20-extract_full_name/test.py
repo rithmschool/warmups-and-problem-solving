@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from extract_full_name import extract_full_name
 
 
 class UnitTests(unittest.TestCase):

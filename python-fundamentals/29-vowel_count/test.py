@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from vowel_count import vowel_count
 
 
 class UnitTests(unittest.TestCase):

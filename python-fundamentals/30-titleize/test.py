@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from titleize import titleize
 
 
 class UnitTests(unittest.TestCase):

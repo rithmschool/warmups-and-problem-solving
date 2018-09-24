@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from triple_and_filter import triple_and_filter
 
 
 class UnitTests(unittest.TestCase):

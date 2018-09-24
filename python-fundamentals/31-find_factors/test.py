@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from find_factors import find_factors
 
 
 class UnitTests(unittest.TestCase):

@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from running_average import running_average
 
 
 class UnitTests(unittest.TestCase):

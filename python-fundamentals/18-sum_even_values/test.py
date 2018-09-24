@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from sum_even_values import sum_even_values
 
 
 class UnitTests(unittest.TestCase):

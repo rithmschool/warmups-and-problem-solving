@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from remove_every_other import remove_every_other
 
 
 class UnitTests(unittest.TestCase):
