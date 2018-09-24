@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from multiply_even_numbers import multiply_even_numbers
 
 
 class UnitTests(unittest.TestCase):

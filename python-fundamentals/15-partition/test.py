@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from partition import partition
 
 
 class UnitTests(unittest.TestCase):

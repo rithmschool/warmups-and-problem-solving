@@ -1,5 +1,5 @@
 import unittest
-# Click to add an import
+from product import product
 
 
 class UnitTests(unittest.TestCase):

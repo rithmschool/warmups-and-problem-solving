@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from intersection import intersection
 
 
 class UnitTests(unittest.TestCase):

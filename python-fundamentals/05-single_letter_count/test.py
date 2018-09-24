@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from single_letter_count import single_letter_count
 
 
 class UnitTests(unittest.TestCase):

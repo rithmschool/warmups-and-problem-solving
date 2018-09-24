@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from last_element import last_element
 
 
 class UnitTests(unittest.TestCase):

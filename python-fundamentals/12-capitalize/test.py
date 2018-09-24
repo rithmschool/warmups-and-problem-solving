@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from capitalize import capitalize
 
 
 class UnitTests(unittest.TestCase):

@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from calculate import calculate
 
 
 class UnitTests(unittest.TestCase):

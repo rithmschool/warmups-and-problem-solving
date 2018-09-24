@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from mode import mode
 
 
 class UnitTests(unittest.TestCase):

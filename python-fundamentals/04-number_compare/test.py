@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from number_compare import number_compare
 
 
 class UnitTests(unittest.TestCase):
