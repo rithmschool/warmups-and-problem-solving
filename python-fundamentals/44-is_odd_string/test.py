@@ -1,6 +1,6 @@
 import unittest
 # Click to add an import
-
+from is_odd_string import is_odd_string
 
 class UnitTests(unittest.TestCase):
 

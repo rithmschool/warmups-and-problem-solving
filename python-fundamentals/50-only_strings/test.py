@@ -1,6 +1,6 @@
 import unittest
 # Click to add an import
-
+from only_strings import only_strings
 
 class UnitTests(unittest.TestCase):
 

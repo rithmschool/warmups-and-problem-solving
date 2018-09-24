@@ -1,6 +1,6 @@
 import unittest
 # Click to add an import
-
+from three_odd_numbers import three_odd_numbers
 
 class UnitTests(unittest.TestCase):
 

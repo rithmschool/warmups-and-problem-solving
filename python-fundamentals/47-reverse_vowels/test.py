@@ -1,6 +1,6 @@
 import unittest
 # Click to add an import
-
+from reverse_vowels import reverse_vowels
 
 class UnitTests(unittest.TestCase):
 

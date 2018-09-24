@@ -1,5 +1,6 @@
 import unittest
 # Click to add an import
+from same_frequency import same_frequency
 
 
 class UnitTests(unittest.TestCase):

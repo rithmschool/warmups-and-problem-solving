@@ -1,6 +1,6 @@
 import unittest
 # Click to add an import
-
+from find_the_duplicate import find_the_duplicate
 
 class UnitTests(unittest.TestCase):
 

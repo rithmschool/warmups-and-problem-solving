@@ -1,7 +1,7 @@
 import unittest
 
 # Click to add an import
-
+from min_max_key_in_dictionary import min_max_key_in_dictionary
 
 class UnitTests(unittest.TestCase):
 

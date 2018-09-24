@@ -1,6 +1,6 @@
 import unittest
 # Click to add an import
-
+from sum_up_diagonals import sum_up_diagonals
 
 class UnitTests(unittest.TestCase):
 

@@ -1,6 +1,6 @@
 import unittest
 # Click to add an import
-
+from last_argument import last_argument
 
 class UnitTests(unittest.TestCase):
 
