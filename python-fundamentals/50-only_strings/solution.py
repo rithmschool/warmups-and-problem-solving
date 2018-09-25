@@ -1,4 +1,6 @@
 def only_strings(*args, **kwargs):
-    vals = list(args)
-    vals.extend(kwargs.values())
+    """Are all arguments to function strings?"""
+
+    vals = list(args) + list(kwargs.values())
+
     return all([isinstance(s, str) for s in vals])

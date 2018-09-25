@@ -1,32 +1,13 @@
-def running_average():
-    """
-    Keep track of these variables in the outer function
-     to be closed over by the inner function
-    """
-    accumulator = 0
-    size = 0
+class RunningAverage:
+    """Provide running average."""
 
-    def inner(number):
-        nonlocal accumulator  # reference parent function's accumulator
-        nonlocal size  # reference parent function's size
+    def __init__(self):
+        self.sum = 0
+        self.count = 0
 
-        accumulator += number
-        size += 1
+    def avg(self, num):
+        """Add to numbers and return average."""
 
-        return accumulator / size
-
-    return inner
-
-#
-# possible to solve using function attributes
-#
-# def running_average():
-#   running_average.accumulator = 0
-#   running_average.size = 0
-
-#   def inner(number):
-#     running_average.accumulator += number
-#     running_average.size += 1
-#     return running_average.accumulator / running_average.size
-
-#   return inner
+        self.sum += num
+        self.count += 1
+        return self.sum / self.count

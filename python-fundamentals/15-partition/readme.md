@@ -3,15 +3,15 @@ Write a function called partition. This function accepts a list and a callback f
 Examples
 
 ```py
-def isEven(num):
+def is_even(num):
   return num % 2 == 0
 
-def isString(el):
+def is_string(el):
   return isinstance(el, str)
 
-partition([1, 2, 3, 4], isEven)
+partition([1, 2, 3, 4], is_even)
 # [[2, 4], [1, 3]]
 
-partition(["hi", None, 6, "bye"], isString)
+partition(["hi", None, 6, "bye"], is_string)
 # [["hi", "bye"], [None, 6]]
 ```

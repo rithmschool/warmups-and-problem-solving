@@ -1,8 +1,15 @@
-def same_frequency(num1, num2):
-    d1 = {letter: str(num1).count(letter) for letter in str(num1)}
-    d2 = {letter: str(num2).count(letter) for letter in str(num2)}
+def freq_counter(coll):
+    """Returns frequency counter mapping of coll."""
 
-    for key, val in d1.items():
-        if not key in d2.keys() or d2[key] != val:
-            return False
-    return True
+    counts = {}
+
+    for x in coll:
+        counts[x] = counts.get(x, 0) + 1
+
+    return counts
+
+
+def same_frequency(num1, num2):
+    """Do these nums have same frequencies of digits?"""
+
+    return freq_counter(str(num1)) == freq_counter(str(num1))

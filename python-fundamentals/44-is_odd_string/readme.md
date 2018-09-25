@@ -4,6 +4,9 @@ For example, "a" is in the first position, "b" is in the second position, and so
 
 If the sum is even, return False.
 
+Hint: one way you could do this would be to find a function that
+returns the ASCII value of a character in Python.
+
 Examples
 
 ```py

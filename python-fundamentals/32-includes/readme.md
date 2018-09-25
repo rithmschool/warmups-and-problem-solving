@@ -4,6 +4,10 @@ The collection can be a string, a list, or a dictionary:
 If the collection is a string or a list, the third parameter is a starting index for where to search from.
 If the collection is a dictionary, the function searches for the value among values in the dictionary; since objects have no sort order, the third parameter is ignored.
 
+You can find out of an item is a string with "isinstance(item, str)",
+if it is a list with "isinstance(item, list)" and a dict with
+"isinstance(item, dict)".
+
 Examples
 
 ```py

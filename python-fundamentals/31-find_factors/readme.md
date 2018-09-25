@@ -1,4 +1,5 @@
-Write a function called find_factors which accepts a number and returns a list of all of the numbers which are is divisible by starting from 1 and going up to the number.
+Write a function called find_factors which accepts a number and returns a list of all 
+of the numbers which evenly divide it, by starting from 1 and going up to the number.
 
 Examples
 

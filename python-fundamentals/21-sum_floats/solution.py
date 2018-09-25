@@ -1,2 +1,4 @@
-def sum_floats(*args):
-    return sum(arg for arg in args if type(arg) == float) or 0
+def sum_floats(nums):
+    """Return sum of floats in nums."""
+
+    return sum([num for num in nums if isinstance(num, float)])

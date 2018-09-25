@@ -1,22 +1,10 @@
 import unittest
-# Click to add an import
 from calculate import calculate
-
 
 class UnitTests(unittest.TestCase):
 
     def test_custom_message(self):
-
-        # Failure message:
-        # expected calculate(
-        #   make_float=False,
-        #   operation='add',
-        #   message='You just added',
-        #   first=2,
-        #   second=4
-        # ) to equal "You just added 6"
         self.assertEqual(calculate(
-            make_float=False,
             operation='add',
             message='You just added',
             first=2,
@@ -24,17 +12,16 @@ class UnitTests(unittest.TestCase):
         ), "You just added 6")
 
     def test_default_message(self):
-
-        # Failure message:
-        # expected calculate(
-        #   make_float=True,
-        #   operation='divide',
-        #   first=3.5,
-        #   second=5
-        # ) to equal "The result is 0.7"
         self.assertEqual(calculate(
-            make_float=True,
             operation='divide',
             first=3.5,
             second=5
         ), "The result is 0.7")
+
+    def test_int_trunc(self):
+        self.assertEqual(calculate(
+            operation='divide',
+            first=3.5,
+            second=5,
+            make_int=True
+        ), "The result is 0")

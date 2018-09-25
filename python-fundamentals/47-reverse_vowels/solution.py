@@ -1,7 +1,12 @@
 def reverse_vowels(s):
-    vowels = "aeiou"
+    """Reverse vowels in a string."""
+
+    vowels = set("aeiou")
+
     string = list(s)
-    i, j = 0, len(s) - 1
+    i = 0
+    j = len(s) -1
+
     while i < j:
         if string[i].lower() not in vowels:
             i += 1
@@ -11,4 +16,5 @@ def reverse_vowels(s):
             string[i], string[j] = string[j], string[i]
             i += 1
             j -= 1
+
     return "".join(string)

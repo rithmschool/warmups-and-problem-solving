@@ -1,2 +1,4 @@
-def is_palindrome(string):
-    return string == string[::-1]
+def is_palindrome(phrase):
+    """Is phrase a palindrome?"""
+
+    return phrase == phrase[::-1]

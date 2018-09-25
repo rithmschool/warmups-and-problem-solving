@@ -1,6 +1,10 @@
-def includes(item, val, start=None):
-    if type(item) == dict:
-        return val in item.values()
+def includes(collection, val, start=None):
+    """Is val in collection, starting at index start?"""
+
+    if isinstance(collection, dict):
+        return val in collection.values()
+
     if start is None:
-        return val in item
-    return val in item[start:]
+        return val in collection
+
+    return val in collection[start:]

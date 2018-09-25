@@ -1,4 +1,8 @@
-Write a function called sum_floats. This function should accept a variable number of arguments. The function should return the sum of all the parameters that are floats. If there are no floats, the function should return 0.
+Write a function called sum_floats. This function should accept a list of nums. 
+The function should return the sum of all nums that are floats. 
+If there are no floats, the function should return 0.
+
+Hints: to find out if a number if a float, use "isinstance(num, float)"
 
 Examples
 

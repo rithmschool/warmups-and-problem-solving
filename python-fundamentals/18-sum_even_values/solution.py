@@ -1,2 +1,4 @@
-def sum_even_values(*args):
-    return sum(arg for arg in args if arg % 2 == 0) or 0
+def sum_even_values(nums):
+    """Sum even numbers in nums."""
+
+    return sum([num for num in nums if num % 2 == 0])

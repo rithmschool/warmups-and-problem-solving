@@ -1,4 +1,11 @@
-def letter_counter(s):
+def letter_counter(phrase):
+    """Return function that provides freq counter."""
+
+    phrase = phrase.lower()
+
     def inner(char):
-        return len(list(c.lower() for c in s.lower() if c == char))
+        """Return frequency of char in phrase, case insensitively."""
+
+        return phrase.count(char.lower())
+
     return inner

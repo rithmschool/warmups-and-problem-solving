@@ -1,8 +1,17 @@
 def two_list_dictionary(keys, values):
-    collection = {}
+    """Make dictionary from keys,values (if not enough vals, use None for missing."""
+
+    out = {}
+
     for idx, val in enumerate(keys):
         if idx < len(values):
-            collection[keys[idx]] = values[idx]
-        else:
-            collection[keys[idx]] = None
-    return collection
+            out[keys[idx]] = values[idx] if idx < len(values) else None
+
+    return out
+
+    # Another way using a feature from Python's standard library. We don't expect
+    # you to have found this one--but it's a good example of how knowing the
+    # standard library is so useful!
+
+    # from itertools import zip_longest
+    # return dict(zip_longest(keys, values))

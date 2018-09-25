@@ -1,7 +1,14 @@
-def vowel_count(string):
-    lower_s = string.lower()
-    return {
-        letter: lower_s.count(letter)
-        for letter in string
-        if letter in "aeiou"
-    }
+VOWELS = set("aeiou")
+
+
+def vowel_count(phrase):
+    """Return frequency map of vowels."""
+
+    phrase = phrase.lower()
+    counter = {}
+
+    for ltr in phrase:
+        if ltr in VOWELS:
+            counter[ltr] = counter.get(ltr, 0) + 1
+
+    return counter

@@ -1,18 +1,24 @@
-def calculate(**kwargs):
-    first = kwargs.get('first', 0)
-    second = kwargs.get('second', 0)
-    is_float = kwargs.get('make_float', False)
-    message = kwargs.get('message', 'The result is')
+def calculate(operation, first, second, make_int=False, message=None):
+    """Perform operation on first + second, truncating to int if make_int.
 
-    operation_lookup = {
-        'add': first + second,
-        'subtract': first - second,
-        'multiply': first * second,
-        'divide': first / second,
-    }
+    Returns "'The result is ...' or message.
+    """
 
-    operation_value = operation_lookup[kwargs.get('operation', '')]
+    if message is None:
+        message = 'The result is'
 
-    if is_float:
-        return "{} {}".format(message, float(operation_value))
-    return "{} {}".format(message, int(operation_value))
+    if operation == "add":
+        res = first + second
+    elif operation == "subtract":
+        res = first - second
+    elif operation == "multiply":
+        res = first * second
+    elif operation == "divide":
+        res = first / second
+    else:
+        raise ValueError("Invalid Operation")
+
+    if make_int:
+        res = int(res)
+
+    return f"{message} {res}"

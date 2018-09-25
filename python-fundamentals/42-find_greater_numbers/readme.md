@@ -1,5 +1,11 @@
 Write a function called find_greater_numbers which accepts a list and returns the number of times a number is followed by a larger number.
 
+For example, for [1, 2, 3], the answer is 3:
+
+- the 1 is followed by the 2 *and* the 3
+
+- the 2 is followed by the 3
+
 Examples
 
 ```py

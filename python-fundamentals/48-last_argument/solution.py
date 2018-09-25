@@ -1,5 +1,6 @@
 def last_argument(*args):
-    try:
+    """Return last argument."""
+
+    if args:
         return args[-1]
-    except IndexError:
-        return None
+

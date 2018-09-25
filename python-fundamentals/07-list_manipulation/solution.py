@@ -1,11 +1,16 @@
-def list_manipulation(collection, command, location, value=None):
-    if(command == "remove" and location == "end"):
-        return collection.pop()
-    elif(command == "remove" and location == "beginning"):
-        return collection.pop(0)
-    elif(command == "add" and location == "beginning"):
-        collection.insert(0, value)
-        return collection
-    elif(command == "add" and location == "end"):
-        collection.append(value)
-        return collection
+def list_manipulation(lst, command, location, value=None):
+    """Manipulate lst to add/remove from beginning or end."""
+
+    if command == "remove":
+        if location == "end":
+            return lst.pop()
+        elif location == "beginning":
+            return lst.pop(0)
+
+    elif command == "add":
+        if location == "beginning":
+            lst.insert(0, value)
+            return lst
+        elif location == "end":
+            lst.append(value)
+            return lst

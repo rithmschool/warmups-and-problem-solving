@@ -1,5 +1,8 @@
-def last_element(l):
-    try:
-        return l[-1]
-    except IndexError as e:
-        return None
+def last_element(lst):
+    """Return last item in list."""
+
+    if lst:
+        return lst[-1]
+
+    # we don't need to do anything else; functions
+    # return None by default

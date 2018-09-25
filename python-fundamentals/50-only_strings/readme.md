@@ -4,6 +4,8 @@ This function should return True if the value of every argument is a string.
 
 Otherwise, it should return False.
 
+Hint: go learn about the function `all()`; it will help here!
+
 Examples
 
 ```py
