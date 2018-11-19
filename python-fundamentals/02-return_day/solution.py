@@ -15,4 +15,4 @@ def return_day(dow):
     if dow < 1 or dow > 7:
         return None
 
-    return DAYS[dow]
+    return DAYS[dow - 1]
