@@ -7,6 +7,6 @@ Hints: to find out if a number if a float, use "isinstance(num, float)"
 Examples
 
 ```py
-sum_floats(1.5, 2.4, 'awesome', [], 1) # 3.9
-sum_floats(1, 2, 3, 4, 5) # 0
+sum_floats([1.5, 2.4, 'awesome', [], 1]) # 3.9
+sum_floats([1, 2, 3, 4, 5]) # 0
 ```
